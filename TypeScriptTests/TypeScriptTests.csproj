@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\ts\DestructuringAndSpread.ts" />
     <Content Remove="wwwroot\ts\tests.ts" />
+    <Content Remove="wwwroot\ts\TypesOperations.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +18,8 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\ts\tests.ts" />
+    <TypeScriptCompile Include="wwwroot\ts\DestructuringAndSpread.ts" />
+    <TypeScriptCompile Include="wwwroot\ts\TypesOperations.ts" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
