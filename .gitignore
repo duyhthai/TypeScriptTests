@@ -4,3 +4,7 @@
 TypeScriptTests/bin/
 
 TypeScriptTests/obj/
+
+*.user
+
+DOMManipulation/obj/
