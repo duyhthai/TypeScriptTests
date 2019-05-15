@@ -8,3 +8,9 @@ TypeScriptTests/obj/
 *.user
 
 DOMManipulation/obj/
+
+DOMManipulation/bin/
+
+DOMManipulation/node_modules/
+
+DOMManipulation/package-lock\.json
