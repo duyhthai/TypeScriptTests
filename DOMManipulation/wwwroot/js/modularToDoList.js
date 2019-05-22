@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || (function () {
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
-    }
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -20,9 +20,8 @@ var __extends = (this && this.__extends) || (function () {
         MyULAppendGrid.prototype.extractDataToAdd = function () {
             return this.addItemDataRoot.value;
         };
-        MyULAppendGrid.prototype.itemTemplate = function (x) {
-            var str = x;
-            var toAdd = "<li class=\"list-group-item\">\n                    <button type=\"button\" class=\"btn btn-sm\" title=\"remove\">\n                        <span class=\"glyphicon glyphicon-minus\" aria-hidden=\"true\">\n                        </span>\n                    </button>\n                    <span>" + str + "</span>\n                </li>";
+        MyULAppendGrid.prototype.itemTemplate = function (str) {
+            var toAdd = "<li class=\"list-group-item\">\n                <button type=\"button\" class=\"btn btn-sm\" title=\"remove\">\n                    <span class=\"glyphicon glyphicon-minus\" aria-hidden=\"true\">\n                    </span>\n                </button>\n                <span>" + str + "</span>\n            </li>";
             var temp = document.createElement('ul');
             temp.innerHTML = toAdd;
             return temp.firstChild;
